@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merry Christmas</title>
+    <title>Happy New Year</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #ffcccc, #ff9999);
-            color: #fff;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(to bottom, #001f3f, #001a33);
+            color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 20px;
+            margin: 0;
+            overflow: hidden;
         }
         h1 {
-            font-size: 4rem;
-            color: #ff3333;
-            text-shadow: 3px 3px #880000;
+            font-size: 5rem;
+            color: #ffcc00;
+            text-shadow: 4px 4px 8px #000000;
+            margin-top: 50px;
         }
         p {
             font-size: 1.5rem;
@@ -23,43 +26,57 @@
             margin: 20px auto;
             max-width: 700px;
         }
-        .snowflakes {
-            color: #ffffff;
-            font-size: 2rem;
-            text-shadow: 2px 2px #000099;
-            animation: snow 3s infinite linear;
+        .fireworks {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('https://cdn.pixabay.com/photo/2018/12/16/09/45/fireworks-3870932_960_720.jpg') no-repeat center center;
+            background-size: cover;
+            filter: blur(2px);
         }
         .message {
-            background: rgba(255, 255, 255, 0.8);
-            color: #880000;
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            padding: 30px;
             border-radius: 15px;
-            margin: 20px auto;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            margin: 40px auto;
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+            display: inline-block;
         }
         footer {
             font-size: 1rem;
-            margin-top: 20px;
+            margin-top: 30px;
+            color: #ffcc00;
         }
-        @keyframes snow {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(20px); }
+        .sparkles {
+            color: #ffcc00;
+            font-size: 2rem;
+            animation: sparkle 2s infinite ease-in-out;
+        }
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.5); }
         }
     </style>
 </head>
 <body>
-    <h1>🎄 Merry Christmas! 🎄</h1>
-    <p class="snowflakes">❄ ❄ ❄ ❄ ❄</p>
+    <div class="fireworks"></div>
+    <h1>🎉 Happy New Year 2025! 🎉</h1>
+    <p class="sparkles">✨ ✨ ✨ ✨ ✨</p>
     <div class="message">
         <p>
-            Tomel, wishes you a season filled with love, joy, and laughter. <br>
-            May your days be merry and bright, and your nights warm and cozy by the fire. <br>
-            Let this Christmas bring happiness to your heart and your home. <br>
-            Cheers to a beautiful holiday and a prosperous New Year ahead!
+            As the clock strikes midnight, we bid farewell to the old and embrace the new. <br>
+            May 2025 be a year of success, happiness, and endless possibilities. <br>
+            Here's to new beginnings, cherished memories, and reaching greater heights. <br>
+            Wishing you a bright and prosperous New Year filled with joy and laughter!
         </p>
     </div>
     <footer>
-        <p>Wishing you all the love and blessings of the holiday season. - By Tomel</p>
+        <p>Celebrate every moment. Cheers to a fantastic New Year! - By Tomel 2025 </p>
     </footer>
 </body>
 </html>
+
